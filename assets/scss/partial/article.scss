@@ -23,6 +23,15 @@ article {
     .postdate {
       display: inline;
     }
+    .subtitle {
+      display: block;
+      margin-right: 16px;
+      min-width: 100px;
+      color: $color-text;
+      font-size: 14px;
+      margin-block-start:  0.75em;
+      margin-block-end: 1em;
+    }
   }
   .content {
     h2 {
@@ -147,7 +156,7 @@ article {
 }
 @media (min-width: 480px) {
   .article-read-time,
-  .article-tag,
+  .article-back-main,
   .article-category {
     display: inline;
 

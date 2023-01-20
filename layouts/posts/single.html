@@ -45,9 +45,12 @@
             {{ if gt $index 0 }} {{ print ", " }} {{ end }}
             <a class="category-link" href="{{ "/categories/" | relLangURL }}{{ $value | urlize }}">{{ $value }}</a>
             {{ end }}
+            | <a href="/">HOME</a>
         </div>
+
         {{ end }}
         {{ if gt .Params.tags 0 }}
+        <br>
         <div class="article-tag">
             <i class="fas fa-tag"></i>
             {{ range $index, $value := .Params.tags }}
